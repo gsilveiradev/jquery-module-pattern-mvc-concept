@@ -1,14 +1,22 @@
-# Workout Frontend
+# jQuery module pattern mvc concept
+jQuery module pattern concept for use with backend mvc frameworks.
 
-In this project we are using the jQuery module pattern concept. The base code to start and more information about this concept can be found here: [https://github.com/guissilveira/jquery-module-pattern-mvc-concept](https://github.com/guissilveira/jquery-module-pattern-mvc-concept)
+> **Reference:** https://learn.jquery.com/code-organization/concepts/
 
-## Configure
+### Why?
 
-Open the ```assets/js/app.js``` and configure the **api_url** param.
+When developing applications with a large amount of code in Javascript / jQuery, it was necessary to apply a concept of code organization to facilitate the work routine of development team.
+This concept was applied with CodeIgniter (PHP MVC framework), where each Controller and Method had a direct relationship with the javascript code to be executed.
 
-## Real example
+### Information:
 
-It was created a DigitalOcean server with Linux-Ngix,Mysql,PHP7 in order to exemplify this project in production:
+Most important files:
+- assets/js/app.js
+- assets/js/app.home.js
 
-* Api: [http://workout-api.rlv.me/api/](http://workout-api.rlv.me/api/)
-* Frontend: [http://workout.rlv.me/](http://workout.rlv.me/)
+Don't forget meta tags:
+```
+<meta name="directory" content="" />
+<meta name="controller" content="home" />
+<meta name="method" content="index" />
+```
